@@ -10,3 +10,6 @@
 8. **08-database-record.png:** Created the milestone table and stored a test row in PostgreSQL before testing container removal and recovery.
 9. **09-drift-detected.png (a-b):** After manually removing only the PostgreSQL container, OpenTofu detected the drift and proposed recreating it while retaining the existing volume.
 10. **10-reconciled-persistent.png:** OpenTofu recreated the removed PostgreSQL container, and the original milestone row remained available because the named Docker volume preserved the data.
+11. **11-variable-change.png:** Changed web_port from 8080 to 8088, reviewed the planned web-container replacement, and verified the portal at its new URL.
+12. **12-destroy.png (a-b):** Successfully destroyed all eight OpenTofu-managed resources and confirmed that the Week 12 lab containers were removed. The managed PostgreSQL volume and its test data were intentionally deleted.
+13. **13-github-pr.png (a-b):** Opened the final pull request from week12-iac-mei into main and confirmed that the IaC Checks workflow passed.
